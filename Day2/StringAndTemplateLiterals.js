@@ -14,3 +14,12 @@ function greatPants() {
 var user = {
   name: 'Harry Potter'
 };
+
+let firstName = "Tom";
+let lastName = "Riddle";
+
+function literal(firstName, lastName) {
+  console.log(`Hello, ${firstName} ${lastName}. Nice to meet you.`)
+}
+
+literal("John", "Smith");
