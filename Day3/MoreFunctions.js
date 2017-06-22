@@ -41,5 +41,8 @@ Meat.prototype = {
   }
 }
 
-let Dinner = new Meat('porkchop', 10.99, 'butt');
-console.log(Dinner.calculateTax());
+let dinner = new Meat('porkchop', 10.99, 'butt');
+dinner.calculateTax = function() {
+  return "MEAT IS MURDER";
+}
+console.log(dinner.calculateTax());
