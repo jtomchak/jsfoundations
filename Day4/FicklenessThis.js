@@ -10,7 +10,6 @@ function cupcakes() {
 }
 
 function puppies() {
-  11
   // call-stack is: `cupcakes` -> `puppies`
   // so, our call-site is in `cupcakes`
   console.log("puppies");
@@ -36,10 +35,10 @@ function dumpster() {
   console.log(this.a);
 }
 var bacon = {
-  a: 2,
+  a: 43,
   dumpster: dumpster
 };
-bacon.dumpster(); // 2
+bacon.dumpster(); // 43
 
 
 //Implicit Lost
@@ -61,7 +60,7 @@ function shoe() {
 var iamObject = {
   a: 2222
 };
-shoe.call(iamObject); // 2
+shoe.call(iamObject); // 2222
 
 //Hard Binding
 function foo(something) {

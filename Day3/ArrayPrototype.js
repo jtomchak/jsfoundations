@@ -13,4 +13,5 @@ Array.prototype.contains = function() {
 
   }
 }
-fruits.contains();
+// fruits.contains("pineapple");
+otherStuff.contains(11);
