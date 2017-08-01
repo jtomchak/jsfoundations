@@ -5,19 +5,23 @@ var fetch = require("node-fetch");
 const weatherURL =
   "http://openweathermap.org/data/2.5/weather?zip=85016,us&appid=b1b15e88fa797225412429c1c50c122a1";
 
-function getWeatherFor(city) {
+const weatherUnit =
+  "http://api.openweathermap.org/data/2.5/weather?zip=89434&appid=63a12df03524d4271e29ea55930cce2d";
+
+function getWeatherFor() {
   fetch(weatherURL)
     .then(resp => resp.json())
     .then(function(data) {
       // Here you get the data to modify as you please
-      console.log(data.main);
+      console.log(data.main.temp);
     })
     .catch(function(error) {
       // If there is any error you will catch them here
+      console.log(error);
     });
 }
 
-getWeatherFor("Phoenix");
+getWeatherFor();
 
 console.log("Creating a simple HTTP request");
 http

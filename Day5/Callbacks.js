@@ -1,12 +1,14 @@
 //Function as a param of a function
 
-function fullName(firstName, lastName, callback) {
+function fullName(firstName, lastName, handler) {
   console.log("My name is " + firstName + " " + lastName);
-  callback(lastName);
+  handler(lastName);
+  handler(firstName);
 }
 
-var greeting = function(ln) {
-  console.log("Welcome Mr. " + ln);
+var greeting = function(lname) {
+  console.log("Welcome Mr. " + lname);
 };
+console.log(greeting);
 
 fullName("Jackie", "Chan", greeting);

@@ -5,7 +5,7 @@ cd.. //directory
 
 pwd //where am i
 
-git commit - am "added new stuff"
+git commit -am "added new stuff"
 //git add . is the same as the '-a' on the commit
 
 git status //clean tree

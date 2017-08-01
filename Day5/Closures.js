@@ -7,11 +7,14 @@ function cityLocation() {
     },
     set: function(newCity) {
       city = newCity;
+      console.log(city);
     }
   };
 }
 
 var myLocation = cityLocation();
+
+console.log(myLocation);
 
 myLocation.get(); // output: Paris
 myLocation.set("Sydney");

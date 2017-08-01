@@ -1,13 +1,13 @@
 //try catch
 try {
   try {
-    //var msg = new Error('d\'oh');
+    //action goes here that may fail
     throw new Error('d\'oh');
-  } catch (err) {
-    console.error('inner', err.message);
-    throw err;
+  } catch (ex) {
+    console.error('inner', ex.message);
+    throw ex;
   } finally {
-    console.log("finally");
+    console.log('finally');
   }
 } catch (err) {
   console.error('outer', err.message);
