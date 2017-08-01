@@ -1,4 +1,4 @@
--Math.random() - Returns a pseudo - random number between 0 and 1. -
+  Math.random() - Returns a pseudo - random number between 0 and 1. -
   Math.round(x) - rounds a number to the nearest integer -
   Math.floor() - rounds a number down to the nearest integer -
   Math.ceil(x) - rounds a number up to the nearest integer -

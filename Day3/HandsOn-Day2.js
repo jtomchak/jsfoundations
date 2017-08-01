@@ -4,4 +4,16 @@
 //   if it is divisible by 3, you will print 'Bing'
 // to the console.If it is divisible by 5, you will print 'Bong'
 // to the console.If the number is divisible by 3 and 5, you will print both 'Bing'
-// and 'Bong'.
+// and 'Bong'
+
+for (i = 0; i <= 100; i++) {
+  console.log(i);
+  if (!(i % 3)) {
+    console.log("Bing");
+  } else if (!(i % 5)) {
+    console.log("Bong");
+  }
+  if (!(i % 3) && !(i % 5)) {
+    console.log("Bing Bong");
+  }
+}
