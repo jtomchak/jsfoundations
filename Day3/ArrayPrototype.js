@@ -10,8 +10,9 @@ Array.prototype.contains = function() {
     } else if (this[i] != "pineapple") {
       console.log(false);
     }
-
   }
-}
-// fruits.contains("pineapple");
+};
+fruits.contains("pineapple");
 otherStuff.contains(11);
+
+//TODO: Writing your own prototype is cool, but ES2015 has a better way, look it up using "the google" and check our fruits array for papaya.
