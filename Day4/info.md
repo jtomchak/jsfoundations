@@ -91,7 +91,7 @@ cupcakes(); // <-- call-site for `cupcakes`
 ```
 
 ---
- Default Binding
+# Default Binding
 
 ```javascript
 function banana() {
@@ -102,7 +102,7 @@ banana(); // 2
 ```
 
 ---
- Implicit Binding
+# Implicit Binding
 
 ```javascript 
 function otherThing() {
@@ -118,7 +118,7 @@ otherThing(); // 2342342
 ```
 
 ---
- -- Implicit Lost
+# -- Implicit Lost
 
 ```javascript
 function lost() {
@@ -133,7 +133,7 @@ apples = "not my beatuiful house";
 boat();
 ```
 ---
-Explicit
+# Explicit
 
 ```javascript
 function shoe() {
@@ -146,7 +146,7 @@ shoe.call(iamObject); // 2222
 ```
 
 ---
- Hard Binding
+# Hard Binding
 
 ```javascript
 function foo(something) {
@@ -164,6 +164,29 @@ console.log(b); // 5
 
 // Since hard binding is such a common pattern, it’s provided with a built-
 // in utility as of ES5, Function.prototype.bind, and it’s used like this:
- 
+```
+---
+
+#ES5 .prototype.bind
+
+```javascript
+this.x = 9;    // this refers to global "window" object here in the browser
+var rocket = {
+  x: 81,
+  getX: function() { return this.x; }
+};
+
+rocket.getX(); // 81
+
+var retrieveX = rocket.getX;
+retrieveX();   
+// returns 9 - The function gets invoked at the global scope
+
+// Create a new function with 'this' bound to rocket
+// New programmers might confuse the
+// global var x with module's property x
+var boundGetX = retrieveX.bind(rocket);
+boundGetX(); // 81
+```
 
 
