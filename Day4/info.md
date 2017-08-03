@@ -34,7 +34,7 @@ function House(color) {
 var houseOne = new House('Red');
 
 	
-console.log(typeof ouseOne);  //  object
+console.log(typeof houseOne);  //  object
 
 
 ```
@@ -54,7 +54,7 @@ House.prototype.whatcolor = function () {
 var houseOne = new House('Red');
 
 	
-console.log(typeof ouseOne);  //  object
+console.log(typeof houseOne);  //  object
 
 houseOne.whatcolor(); // The color of this house is Red
 
@@ -91,3 +91,79 @@ cupcakes(); // <-- call-site for `cupcakes`
 ```
 
 ---
+ Default Binding
+
+```javascript
+function banana() {
+  console.log(this.a);
+}
+var a = 2;
+banana(); // 2
+```
+
+---
+ Implicit Binding
+
+```javascript 
+function otherThing() {
+  console.log(this.a);
+}
+var bacon = {
+  a: 43,
+  dumpster: otherThing
+};
+var a = 2342342;
+bacon.dumpster(); // 43 
+otherThing(); // 2342342
+```
+
+---
+ -- Implicit Lost
+
+```javascript
+function lost() {
+  console.log(this.apples);
+}
+var basket = {
+  apples: 190,
+  lost: lost
+};
+var boat = basket.lost; // function reference/alias!
+apples = "not my beatuiful house";
+boat();
+```
+---
+Explicit
+
+```javascript
+function shoe() {
+  console.log(this.a);
+}
+var iamObject = {
+  a: 2222
+};
+shoe.call(iamObject); // 2222
+```
+
+---
+ Hard Binding
+
+```javascript
+function foo(something) {
+  console.log(this.a, something);
+  return this.a + something;
+}
+var obj = {
+  a: 2
+};
+var bar = function() {
+  return foo.apply(obj, arguments);
+};
+var b = bar(3); // 2 3
+console.log(b); // 5
+
+// Since hard binding is such a common pattern, it’s provided with a built-
+// in utility as of ES5, Function.prototype.bind, and it’s used like this:
+ 
+
+
