@@ -1,18 +1,15 @@
 //try catch
 try {
   try {
-    //var msg = new Error('d\'oh');
-    throw new Error('d\'oh');
+    throw new Error("d'oh");
   } catch (err) {
-    console.error('inner', err.message);
-    throw err;
+    console.error("inner", err.message);
   } finally {
     console.log("finally");
   }
 } catch (err) {
-  console.error('outer', err.message);
+  console.error("outer", err.message);
 }
-
 
 // Output:
 // "inner" "oops"

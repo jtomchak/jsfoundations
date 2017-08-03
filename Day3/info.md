@@ -56,6 +56,8 @@ var Meat = function(name, price, cut) {
 
 
 let dinner = new Meat('porkchop', 10.99, 'butt');
+let steak = new Meat('steak', 10.99, 't-bone');
+let vegan = new Meat('Soy', 10.99, 'ewwww');
 console.log(dinner.calculateTax());
 ```
 ---
