@@ -95,7 +95,7 @@ if(evaluateSomething){
 ```
 ---
 # Decision Constructs
-* and the else-if part
+* and the else if part
 
 ```javascript
 const evaluateSomething = false;
