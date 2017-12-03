@@ -1,0 +1,23 @@
+{
+  "name": "jsfoundations",
+  "version": "1.0.0",
+  "description": "Lectures and exercises for JavaScript Foundations",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jtomchak/jsfoundations.git"
+  },
+  "keywords": [
+    "javascript",
+    "training"
+  ],
+  "author": "Jesse Tomchak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jtomchak/jsfoundations/issues"
+  },
+  "homepage": "https://github.com/jtomchak/jsfoundations#readme"
+}
