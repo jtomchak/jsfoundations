@@ -1,6 +1,6 @@
 port: 8080
 dest: build
-source: ./Lectures/Day1.md
+source: 'Lectures'
 title: ''
 assets: ['assets']
 css: ''
