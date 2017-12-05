@@ -5,14 +5,17 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-  "start": "remarker",
-  "build": "remarker build"
+    "start": "remarker",
+    "build": "remarker build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jtomchak/jsfoundations.git"
   },
-  "keywords": ["javascript", "training"],
+  "keywords": [
+    "javascript",
+    "training"
+  ],
   "author": "Jesse Tomchak",
   "license": "ISC",
   "bugs": {
@@ -37,6 +40,7 @@
     "vfile-reporter": "^4.0.0"
   },
   "devDependencies": {
+    "jest-cli": "^21.2.1",
     "remarker": "^1.5.1"
   }
 }

@@ -20,6 +20,10 @@
 
 ### Install Node, Git,
 
+#### https://nodejs.org/en/
+
+#### https://git-scm.com/
+
 ### Open your Terminal
 
 ---
