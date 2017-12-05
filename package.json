@@ -4,7 +4,9 @@
   "description": "Lectures and exercises for JavaScript Foundations",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "remarker",
+    "build": "remarker build"
   },
   "repository": {
     "type": "git",
@@ -19,5 +21,26 @@
   "bugs": {
     "url": "https://github.com/jtomchak/jsfoundations/issues"
   },
-  "homepage": "https://github.com/jtomchak/jsfoundations#readme"
+  "homepage": "https://github.com/jtomchak/jsfoundations#readme",
+  "dependencies": {
+    "rehype-document": "^2.0.1",
+    "rehype-stringify": "^3.0.0",
+    "remark": "^8.0.0",
+    "remark-html": "^6.0.1",
+    "remark-parse": "^4.0.0",
+    "remark-preset-lint-markdown-style-guide": "^2.1.1",
+    "remark-rehype": "^2.0.1",
+    "remark-retext": "^3.1.0",
+    "remark-toc": "^4.0.1",
+    "retext-english": "^3.0.0",
+    "retext-indefinite-article": "^1.1.2",
+    "to-vfile": "^2.1.2",
+    "unified": "^6.1.6",
+    "unified-stream": "^1.0.1",
+    "vfile-reporter": "^4.0.0"
+  },
+  "devDependencies": {
+    "jest-cli": "^21.2.1",
+    "remarker": "^1.5.1"
+  }
 }
